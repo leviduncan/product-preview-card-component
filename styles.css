@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  color: hsl(228, 12%, 48%);
+}
+body .container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px;
+}
+body .container .card {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  max-width: 380px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.055);
+  margin-bottom: 20px;
+}
+@media (min-width: 1440px) {
+  body .container .card {
+    flex-direction: row;
+    max-width: 717px;
+    height: 512px;
+  }
+}
+body .container .card .pane-left {
+  background-color: hsl(158, 36%, 37%);
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  background: url(/images/image-product-mobile.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (min-width: 1440px) {
+  body .container .card .pane-left {
+    background: url(/images/image-product-desktop.jpg);
+    background-size: contain;
+    height: 590px;
+  }
+}
+body .container .card .pane-right {
+  background-color: hsl(0, 0%, 100%);
+  padding: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+body .container .card .pane-right .title {
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  padding-bottom: 30px;
+}
+body .container .card .pane-right h1 {
+  font-family: Fraunces, sans-serif;
+  color: hsl(212, 21%, 14%);
+  font-size: 2.4em;
+  line-height: 1;
+  padding-bottom: 30px;
+  width: 300px;
+}
+@media (min-width: 1440px) {
+  body .container .card .pane-right h1 {
+    width: 260px;
+    font-size: 2.8em;
+  }
+}
+body .container .card .pane-right p {
+  padding-bottom: 20px;
+  line-height: 1.8;
+}
+body .container .card .price {
+  display: flex;
+  align-items: center;
+  padding-bottom: 15px;
+}
+body .container .card .price h2 {
+  font-size: 2.4em;
+  font-family: Fraunces, sans-serif;
+  color: hsl(158, 36%, 37%);
+  padding-right: 30px;
+}
+body .container .card .price p {
+  text-decoration: line-through;
+  padding: 20px 0;
+}
+body .container .card button.btn {
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  width: 100%;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+}
+body .container .card button.btn:hover {
+  background-color: hsl(157, 40%, 10%);
+  cursor: pointer;
+}
+body .container .card button.btn img {
+  padding-right: 10px;
+}
+body .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+body .attribution a {
+  color: hsl(228, 45%, 44%);
+}/*# sourceMappingURL=styles.css.map */
